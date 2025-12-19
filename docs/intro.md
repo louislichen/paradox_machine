@@ -71,3 +71,4 @@ During this process, I realized that there is a type of issue that is easily ove
 In addition, most large language models available today tend to align themselves with the user. Whether the user is right or wrong, LLMs often produce responses that conform to the user’s viewpoint. However, objectivity matters far more to me. What I need is someone—or something—that argues back, critically examines my ideas, and challenges my assumptions. This is not an enemy; it is a friend.
 
 For this reason, I created this repository to document my approach and thought process.
+
