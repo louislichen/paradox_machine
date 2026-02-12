@@ -1,0 +1,3 @@
+[console_scripts]
+paradox-demo = src.demo:main
+paradox-machine = run:main

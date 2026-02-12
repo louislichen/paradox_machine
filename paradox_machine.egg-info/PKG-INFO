@@ -1,3 +1,25 @@
+Metadata-Version: 2.1
+Name: paradox-machine
+Version: 0.1.0
+Summary: A structured paradox detection toolkit built on multi-phase LLM reasoning.
+Author: Paradox Machine Contributors
+Keywords: llm,paradox,reasoning,analysis,prompt-engineering
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: ruff>=0.5; extra == "dev"
+
 # Paradox Machine
 
 A minimum viable tool (MVP) for detecting paradoxes in viewpoints and proposals.
@@ -97,6 +119,35 @@ Suggested A/B comparison flow:
 1. Run `python -m src.demo ...` to observe a natural model response.
 2. Run `python run.py ...` to generate a structured paradox report.
 3. Compare rebuttal strength, structure quality, and actionable guidance.
+
+## Model Config Selection Rules
+
+`--config` supports two formats:
+
+- Config name: `deepseek-chat`, `deepseek-reasoner`
+- Config path: `assets/models/deepseek-chat.yaml`
+
+If `--config` is omitted:
+
+- First try env var `PARADOX_MODEL_CONFIG`
+- Otherwise default to `assets/models/deepseek-chat.yaml`
+
+## Common Errors
+
+`API key is empty ...`
+
+- `DEEPSEEK_API_KEY` is not set
+- Or `api_key_env` / `api_key` is not configured correctly in YAML
+
+`Model config not found ...`
+
+- `--config` name/path is wrong
+- Check filenames under `assets/models/`
+
+`response is not in expected format ...`
+
+- Model response is not OpenAI-compatible `chat/completions` format
+- Verify `base_url`, `chat_completions_path`, and provider compatibility
 
 ## References
 

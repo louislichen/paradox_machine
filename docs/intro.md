@@ -2,7 +2,7 @@
 
 To be honest, it seems that not many people focus on how to observe and resolve paradoxes, especially in the field of computer science. I’m not doing this for a paper, but simply for fun — I want to explore something different in my spare time. Interestingly, I realized that this approach might actually be useful for scientific research or just daily life, particularly in uncovering overlooked yet important logical problems. So, I decided to pursue it. 
 
-One thing I must acknowledge is that I used Gemini 3 Pro to help build the framework and ChatGPT to help polish the writing.
+One thing I must acknowledge is that I used Gemini 3 Pro and ChatGPT to help build the framework and CODEX to help polish the writing.
 
 # Official Notebook
 
@@ -64,9 +64,9 @@ Thus, in the context of computer science, when considering the impact on a speci
 
 Q3. What's the significance of understanding paradoxes?
 
-To be honest, my original motivation for starting this project came from everyday life—especially from what I often see on social media. I frequently encounter viewpoints or tendencies that are clearly flawed. While they make me deeply uncomfortable, I often find myself unable to refute them in a way that is both comprehensive and logically rigorous. This feeling of frustration and helplessness eventually led me to approach the problem from the perspective of paradoxes.
+To be honest, my original motivation for starting this project came from everyday life — especially from what I often see on social media. I frequently encounter viewpoints or tendencies that are clearly flawed. While they make me deeply uncomfortable, I often find myself unable to refute them in a way that is both comprehensive and logically rigorous. This feeling of frustration and helplessness eventually led me to approach the problem from the perspective of paradoxes.
 
-During this process, I realized that there is a type of issue that is easily overlooked in research. In my field, particularly in system-related topics, we are constantly forced to make trade-offs—that is, to optimize metric A while minimizing the negative impact on metric B. In such problems, our initial focus is usually on improving metric A. However, this raises a critical concern: we may come up with a concrete idea, yet that idea may logically imply a negative impact on metric B from the very beginning. If such hidden issues can be identified early, we can avoid wasting time on exploration and experimentation. From this perspective, a “paradox machine” serves as a powerful tool for uncovering these problems.
+During this process, I realized that there is a type of issue that is easily overlooked in research. In my field, particularly in system-related topics, we are constantly forced to make trade-offs — that is, to optimize metric A while minimizing the negative impact on metric B. In such problems, our initial focus is usually on improving metric A. However, this raises a critical concern: we may come up with a concrete idea, yet that idea may logically imply a negative impact on metric B from the very beginning. If such hidden issues can be identified early, we can avoid wasting time on exploration and experimentation. From this perspective, a “paradox machine” serves as a powerful tool for uncovering these problems.
 
 In addition, most large language models available today tend to align themselves with the user. Whether the user is right or wrong, LLMs often produce responses that conform to the user’s viewpoint. However, objectivity matters far more to me. What I need is someone—or something—that argues back, critically examines my ideas, and challenges my assumptions. This is not an enemy; it is a friend.
 
